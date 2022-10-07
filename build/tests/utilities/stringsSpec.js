@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const strings_1 = __importDefault(require("../../utilities/strings"));
 describe('testing strings.ts functions', () => {
-    describe('testing capitalize function', () => {
+    describe('function capitalize capitalize a string', () => {
         it('should capitalize a string', () => {
             expect(strings_1.default.capitalize('a sentence')).toEqual('A Sentence');
         });

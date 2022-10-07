@@ -7,7 +7,7 @@ const arrays_1 = __importDefault(require("../../utilities/arrays"));
 describe('testing arrays.ts functions', () => {
     const numArr = [3, 4, 5, 6];
     const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
-    describe('testing addArr function', () => {
+    describe('addArr function should add the array numbers', () => {
         it('should add numbers in array and be truthy', () => {
             expect(arrays_1.default.addArr(numArr)).toBeTruthy();
         });
@@ -15,7 +15,7 @@ describe('testing arrays.ts functions', () => {
             expect(arrays_1.default.addArr(numArr)).toBe(18);
         });
     });
-    describe('testing concatArr function', () => {
+    describe('concatArr function should concat two arrays', () => {
         it('should concatinate 2 arrays to not equal the first', () => {
             expect(arrays_1.default.concatArr(numArr, wordArr)).not.toEqual(numArr);
         });
@@ -23,7 +23,7 @@ describe('testing arrays.ts functions', () => {
             expect(arrays_1.default.concatArr(numArr, wordArr)).not.toEqual(wordArr);
         });
     });
-    describe('testing cut3 function', () => {
+    describe('cut3 function should cut the third element in the array', () => {
         it('should contain 3 items except rabbit', () => {
             expect(arrays_1.default.cut3(wordArr)).toEqual(['cat', 'dog', 'bird']);
         });
@@ -31,7 +31,7 @@ describe('testing arrays.ts functions', () => {
             expect(arrays_1.default.cut3(wordArr)).not.toContain('rabbit');
         });
     });
-    describe('testing lgNum function', () => {
+    describe('lgNum function should return the largest number in the array', () => {
         it('should have 6 be largest number', () => {
             expect(arrays_1.default.lgNum(numArr)).toEqual(6);
         });

@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const numbers_1 = __importDefault(require("../../utilities/numbers"));
 describe('testing numbers.ts functions', () => {
-    describe('testing sum function', () => {
+    describe('sum function should sum two numbers', () => {
         it('should be a sum greater than 10', () => {
             expect(numbers_1.default.sum(3, 10)).toBeGreaterThan(10);
         });
@@ -13,7 +13,7 @@ describe('testing numbers.ts functions', () => {
             expect(numbers_1.default.sum(-3, 10)).toBeLessThan(10);
         });
     });
-    describe('testing sum function', () => {
+    describe('multiply function should multiply two numbers', () => {
         it('should multiply 3 by 5 and be 15', () => {
             expect(numbers_1.default.multiply(3, 5)).toBe(15);
         });
