@@ -1,7 +1,7 @@
 import numbers from '../../utilities/numbers';
 
 describe('testing numbers.ts functions', () => {
-  describe('testing sum function', () => {
+  describe('sum function should sum two numbers', () => {
     it('should be a sum greater than 10', () => {
       expect(numbers.sum(3, 10)).toBeGreaterThan(10);
     });
