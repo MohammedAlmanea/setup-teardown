@@ -13,7 +13,7 @@ describe('testing arrays.ts functions', () => {
     });
   });
 
-  describe('testing concatArr function', () => {
+  describe('concatArr function should concat two arrays', () => {
     it('should concatinate 2 arrays to not equal the first', () => {
       expect(arrays.concatArr(numArr, wordArr)).not.toEqual(numArr);
     });
