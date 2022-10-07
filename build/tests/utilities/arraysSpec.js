@@ -11,8 +11,8 @@ describe('testing arrays.ts functions', () => {
         it('should add numbers in array and be truthy', () => {
             expect(arrays_1.default.addArr(numArr)).toBeTruthy();
         });
-        it('should add numbers in array and be 19', () => {
-            expect(arrays_1.default.addArr(numArr)).toBe(19);
+        it('should add numbers in array and be 18', () => {
+            expect(arrays_1.default.addArr(numArr)).toBe(18);
         });
     });
     describe('testing concatArr function', () => {
