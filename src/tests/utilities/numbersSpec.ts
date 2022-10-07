@@ -10,7 +10,7 @@ describe('testing numbers.ts functions', () => {
     });
   });
 
-  describe('testing sum function', () => {
+  describe('multiply function should multiply two numbers', () => {
     it('should multiply 3 by 5 and be 15', () => {
       expect(numbers.multiply(3, 5)).toBe(15);
     });
