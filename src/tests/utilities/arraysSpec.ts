@@ -22,7 +22,7 @@ describe('testing arrays.ts functions', () => {
     });
   });
 
-  describe('testing cut3 function', () => {
+  describe('cut3 function should cut the third element in the array', () => {
     it('should contain 3 items except rabbit', () => {
       expect(arrays.cut3(wordArr)).toEqual(['cat', 'dog', 'bird']);
     });
