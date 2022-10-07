@@ -31,7 +31,7 @@ describe('testing arrays.ts functions', () => {
     });
   });
 
-  describe('testing lgNum function', () => {
+  describe('lgNum function should return the largest number in the array', () => {
     it('should have 6 be largest number', () => {
       expect(arrays.lgNum(numArr)).toEqual(6);
     });
