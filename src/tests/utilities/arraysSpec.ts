@@ -4,7 +4,7 @@ describe('testing arrays.ts functions', () => {
   const numArr = [3, 4, 5, 6];
   const wordArr = ['cat', 'dog', 'rabbit', 'bird'];
 
-  describe('testing addArr function', () => {
+  describe('addArr function should add the array numbers', () => {
     it('should add numbers in array and be truthy', () => {
       expect(arrays.addArr(numArr)).toBeTruthy();
     });
